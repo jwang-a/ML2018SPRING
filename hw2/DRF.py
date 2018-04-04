@@ -71,7 +71,7 @@ finputs = Variable(xtest.view(testlength,chooselen).cuda())
 result = []
 for _ in range(treenum):
     print(_)
-    tree = 'fctree'+str(_)+'.plk'
+    tree = './DRF/fctree'+str(_)+'.plk'
     net = Net(chooselen,hidden_size1,hidden_size2,hidden_size3,hidden_size4,hidden_size5,output_size)
     net.load_state_dict(torch.load(tree))
     net.cuda()
