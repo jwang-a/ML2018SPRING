@@ -189,7 +189,7 @@ class RandomAffine(object):
 num_epochs = 10000
 learning_rate = 1e-4
 batch_size = 100
-output = open(sys.argv[1],'w')
+output = open('ans.csv','w')
 
 #get dataset
 mytransform = transforms.Compose([
@@ -225,7 +225,7 @@ class ImagesDataset(torch.utils.data.Dataset):
                 n=len(self.df)
                 return n
 
-fetch = pd.read_csv('./data/train.csv')
+fetch = pd.read_csv('sys.argv[1]')
 train_dataset = ImagesDataset(df=fetch,
 			      train=True,
 			      transform=mytransform)
