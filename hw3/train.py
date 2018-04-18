@@ -225,7 +225,7 @@ class ImagesDataset(torch.utils.data.Dataset):
                 n=len(self.df)
                 return n
 
-fetch = pd.read_csv('sys.argv[1]')
+fetch = pd.read_csv(sys.argv[1])
 train_dataset = ImagesDataset(df=fetch,
 			      train=True,
 			      transform=mytransform)
