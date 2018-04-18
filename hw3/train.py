@@ -186,7 +186,7 @@ class RandomAffine(object):
 
 
 #Hyper Parameters
-num_epochs = 0
+num_epochs = 10000
 learning_rate = 1e-4
 batch_size = 100
 output = open(sys.argv[1],'w')
