@@ -13,7 +13,6 @@ for i in range(415):
 	image.append(io.imread(imagelist[i]))
 images = np.asarray(image).astype(float)
 image_avg = np.average(images,axis=0)
-io.imsave('AVG.jpg',image_avg.astype(np.uint8))
 image_avg_flat = image_avg.reshape(1,-1)
 images_flat = images.reshape(415,-1)
 images_flat = images_flat-image_avg_flat
