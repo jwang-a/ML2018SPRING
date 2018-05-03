@@ -25,4 +25,4 @@ reconstruct = reconstruct.reshape(600,600,3)
 reconstruct-=np.min(reconstruct)
 reconstruct/=np.max(reconstruct)
 reconstruct*=255
-io.imsave('reconstruction.jpg',reconstruct.astype(np.uint8))
+io.imsave('reconstruction.png',reconstruct.astype(np.uint8))
