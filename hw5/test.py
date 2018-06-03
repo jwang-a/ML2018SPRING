@@ -534,7 +534,7 @@ def main():
                   w2vwindow=5,
                   usingswish=True,
                   cuda=True,
-                  Log='LSTMACC',
+                  Log=None,
                   loaddictpath='LSTM.plk',
                   savedictpath='LSTM.plk',
                   resultpath=sys.argv[2])
