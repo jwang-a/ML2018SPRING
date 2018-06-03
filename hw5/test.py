@@ -423,11 +423,11 @@ class Frame():
 
     def trainword2vec(self,data):
         word2vec = Word2Vec(data,size=self.embed_size,window=self.w2vwindow,min_count=0,workers=8,seed=0)
-        word2vec.save('WORD2VECDICT.pickle')
+        word2vec.save('WORD2VECDICT')
         del word2vec
 
     def loadword2vec(self):
-        self.dictionary = Word2Vec.load('WORD2VECDICT.pickle').wv
+        self.dictionary = Word2Vec.load('WORD2VECDICT').wv
         if self.traindata is not None:
             self.train_dataset.dictionary = self.dictionary
         if self.extradata is not None:
