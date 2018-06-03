@@ -538,14 +538,8 @@ def main():
                   loaddictpath='LSTM.plk',
                   savedictpath='LSTM.plk',
                   resultpath=sys.argv[2])
-    if Model.traindata is not None:
-        Model.loadtraindata()
-    if Model.extradata is not None:
-        Model.loadextradata(Model.train_dataset.dictionary)
-    if Model.valddata is not None:
-        Model.loadvalddata(Model.train_dataset.dictionary)
     if Model.testdata is not None:
-        Model.loadtestdata(Model.train_dataset.dictionary)
+        Model.loadtestdata(None)
 
     if Model.trainw2v is not False:
         Model.trainword2vec(Model.train_dataset.df+Model.extra_dataset.df)
