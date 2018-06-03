@@ -328,7 +328,7 @@ class Frame():
                 tot+=1
 
 def main():
-    Model = Frame(traindata=None,
+    Model = Frame(traindata=datamapper,
                   testdata=sys.argv[1],
                   valddata=None,
                   movie=sys.argv[3],
