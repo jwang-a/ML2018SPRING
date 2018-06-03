@@ -536,7 +536,7 @@ def main():
                   cuda=True,
                   Log='LSTMACC',
                   loaddictpath=None,
-                  savedictpath='LSTM.plk',
+                  savedictpath='MODEL.plk',
                   resultpath='ans.csv')
     if Model.traindata is not None:
         Model.loadtraindata()
