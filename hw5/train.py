@@ -13,10 +13,6 @@ import sys
 import re
 import gensim
 from gensim.models.word2vec import Word2Vec
-import io
-
-#settings
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 #self defined function
 class Swish(nn.Module):
